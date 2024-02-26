@@ -21,11 +21,11 @@ function roadRadar(speed, area) {
     }
     overspeed = speed - speedlimit
 
-    if (overspeed > 0 && overspeed < 20) {
+    if (overspeed > 0 && overspeed <= 20) {
         status = 'speeding';
-    } else if (overspeed >= 20 && overspeed < 40) {
+    } else if (overspeed > 20 && overspeed <= 40) {
         status = 'excessive speeding';
-    } else if (overspeed >= 40) {
+    } else if (overspeed > 40) {
         status = 'reckless driving';
     }
 
@@ -36,4 +36,3 @@ function roadRadar(speed, area) {
     }
 }
 
-roadRadar(40, 'city');
