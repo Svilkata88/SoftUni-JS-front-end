@@ -10,8 +10,6 @@ function deleteByEmail() {
             if (tdElement.textContent === inputField.value && inputField.value) {
                 row.remove();
                 textOutput.textContent = 'Deleted.'
-            } else { textOutput.textContent = 'Not found.' }
-            
+            } else { textOutput.textContent = 'Not found.' }  
         })
-
 }
