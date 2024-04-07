@@ -33,6 +33,5 @@ function encodeAndDecodeMessages() {
     function previousChar(letter) {
         let newLetter = letter.charCodeAt(0) - 1;
         return String.fromCharCode(newLetter)
-    }
-    
+    } 
 }
